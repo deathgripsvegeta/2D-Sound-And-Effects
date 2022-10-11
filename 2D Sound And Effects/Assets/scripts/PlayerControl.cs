@@ -24,13 +24,13 @@ public class PlayerControl : MonoBehaviour
             isOnGround = false;
         }
     }
-}
-private void OnCollisionEnter2D(Collision2D other)
-{
-    if(other.gameObject.CompareTag("ground"))
+    
+  private void OnCollisionEnter2D(Collision2D other)
     {
-        isOnGround = true;
-
+        if(other.gameObject.CompareTag("ground"))
+        {
+            isOnGround = true;
+        }
     }
-
 }
+
