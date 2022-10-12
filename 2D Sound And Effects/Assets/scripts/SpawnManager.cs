@@ -7,7 +7,7 @@ public class SpawnManager : MonoBehaviour
     public GameObject obstaclePrefab;
     private Vector3 _spawnPos = new Vector3(10, -3, 0);
     private float _startDelay = 2;
-    private float _repeatRate = 3;
+    private float _repeatRate = 3.5f;
     void Start()
     {
         InvokeRepeating("SpawnObstacle", _startDelay, _repeatRate);
