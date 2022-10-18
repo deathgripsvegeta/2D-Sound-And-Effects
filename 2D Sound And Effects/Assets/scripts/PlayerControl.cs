@@ -39,6 +39,7 @@ public class PlayerControl : MonoBehaviour
         else if(other.gameObject.CompareTag("obstackle"))
         {
             isGameOver = true;
+            _playerAnime.SetTrigger("IsHit");
         }
     }
 }
